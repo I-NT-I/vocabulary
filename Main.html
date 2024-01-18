@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website
+    <title>vocabulary
 
     </title>
     <script src="./main.js"></script>
@@ -11,35 +11,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="addbox">
     <div>
-
-        <p>german:</p>
+        <h3>german:</h3>
         <input id="InputVoc1"  type="text"></input>
 
-        <p>english:</p>
+        <h3>english:</h3>
         <input id="InputVoc2"  type="text"></input>
 
         <button onclick="addVoc()">Add word</button>
-    </div>
+    
+
+
+        <p>item Count: <span id="Anzahl"></span></p>
+</div>
+</div>
+
+
+    <div class="addbox">
     <div>
-        <p>item Count<DIV id="Anzahl"></DIV></p>
-    </div>
+        <h3>Deutsches Wort</h3>
+        <input id="Word1"  type="text" disabled></input>
 
-
-    <br>
-    <br>
-
-    <div>
-        <p>Deutsches Wort</p>
-        <input id="Word1"  type="text"></input>
-        <button id="NextWordBtn" onclick="addword()" >Next word</button>
-
-        <p>English guess</p>
+        <h3>English guess</h3>
         <input id="Guess1"  type="text"></input>
         <p class="Check"></p>
-        <button onclick="guess()">Check word</button>
+        <button id="NextWordBtn" onclick="addword()" >Next word</button>
+        <button id="checkwordbtn" onclick="guess()" disabled>Check word</button>
 
-
+    </div>
     </div>
 </body>
 </html>
