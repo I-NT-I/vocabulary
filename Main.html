@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website
+
+    </title>
+    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+
+        <p>german:</p>
+        <input id="InputVoc1"  type="text"></input>
+
+        <p>english:</p>
+        <input id="InputVoc2"  type="text"></input>
+
+        <button onclick="addVoc()">Add word</button>
+    </div>
+    <div>
+        <p>item Count<DIV id="Anzahl"></DIV></p>
+    </div>
+
+
+    <br>
+    <br>
+
+    <div>
+        <p>Deutsches Wort</p>
+        <input id="Word1"  type="text"></input>
+        <button id="NextWordBtn" onclick="addword()" >Next word</button>
+
+        <p>English guess</p>
+        <input id="Guess1"  type="text"></input>
+        <p class="Check"></p>
+        <button onclick="guess()">Check word</button>
+
+
+    </div>
+</body>
+</html>
