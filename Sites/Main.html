@@ -9,9 +9,12 @@
     <script src="../script/main.js"></script>
     <link rel="stylesheet" href="../style/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
 </head>
 <body>
-    <div class="addbox">
+   
+    
+    <!-- <div class="addbox">
     <div>
         <h3>german:</h3>
         <input id="InputVoc1"  type="text"></input>
@@ -19,13 +22,13 @@
         <h3>english:</h3>
         <input id="InputVoc2"  type="text"></input>
 
-        <button onclick="addVoc()">Add word</button>
+        <button onclick="addWord()">Add word</button>
     
 
 
         <p>item Count: <span id="Anzahl"></span></p>
 </div>
-</div>
+</div> -->
 
 
     <div class="addbox">
@@ -36,8 +39,9 @@
         <h3>English guess</h3>
         <input id="Guess1"  type="text"></input>
         <p class="Check"></p>
-        <button id="NextWordBtn" onclick="addword()" >Next word</button>
+        <button id="NextWordBtn" onclick="NextWord()" >Next word</button>
         <button id="checkwordbtn" onclick="guess()" disabled>Check word</button>
+        <a href="./particles.html"><button></button></a>
 
     </div>
     </div>
