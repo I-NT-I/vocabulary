@@ -4,7 +4,32 @@ var Count = 0;
 var GuessCount = 0;
 const VocinputWrong = []
 
-
+function createTable(tableData) {
+    $( "table" ).remove();
+    var table = document.createElement('table');
+    var table = document.createElement('table');
+    
+    
+    var tableBody = document.createElement('tbody');
+    tableBody.classList.add('test');
+    tableData.forEach(function(rowData) {
+      var row = document.createElement('tr');
+  
+      rowData.forEach(function(cellData) {
+        var cell = document.createElement('td');
+        cell.appendChild(document.createTextNode(cellData));
+        row.appendChild(cell);
+      });
+  
+      tableBody.appendChild(row);
+    });
+  
+    table.appendChild(tableBody);
+    document.body.appendChild(table);
+  }
+  
+  createTable([["row 1, cell 1", "row 1, cell 2"], ["row 2, cell 1", "row 2, cell 2"]]);
+  
 function addWord(){
     
 
@@ -16,12 +41,13 @@ function addWord(){
         Count++
         $("#Anzahl").text(Vocinput.length);
         localStorage.setItem('myItem', JSON.stringify(Vocinput));
+        createTable(Vocinput)
     }
     else{
         alert("Box empty");
     }
 
-
+    
 
 }
 function guess(){

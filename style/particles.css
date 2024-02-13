@@ -33,11 +33,15 @@ input{
     color: gray;    
 }
 .addbox{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100px;
 
     
 }
@@ -67,3 +71,19 @@ button:enabled:hover{
 
 }
 canvas{ display: block; vertical-align: bottom; }
+
+table{
+    color: white !important;
+    border-block-color: white;
+    z-index: 1000;
+    position: relative;
+    margin: 0 auto;
+    top: 500px;
+}
+table, th, td {
+    border: 1px solid;
+  }
+
+  tbody::before{
+    content: "GERMAN ";
+  }
