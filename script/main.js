@@ -47,7 +47,7 @@ function addWord(){
         alert("Box empty");
     }
 
-    
+
 
 }
 function guess(){
@@ -84,3 +84,15 @@ console.log(val[GuessCount][1]);
     $("#checkwordbtn").prop("disabled",false)
 
 }
+// navigation 
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+$( document ).ready(function() {
+  AOS.init();
+
+});

@@ -13,7 +13,20 @@
     
 </head>
 <body>
-    <div id="particles-js">        <div class="addbox">
+    
+    <div id="particles-js">    
+    </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Clients</a>
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        <span style="font-size:30px;cursor:pointer" class="hamnav" onclick="openNav()">&#9776; </span>
+            <div class="addbox">
         <div>
             <h3>german:</h3>
             <input id="InputVoc1"  type="text"></input>
@@ -28,7 +41,7 @@
             <p>item Count: <span id="Anzahl"></span></p>
             <a href="./Main.html"><button></button></a>
     </div>
-    </div></div>
+    </div>
 <table>
     <tbody>
         <th class="paceholder">no Words</th>
