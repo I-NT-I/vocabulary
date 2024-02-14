@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="vimg/png/Screenshot%202024-02-14%20205833.png" alt="Logo" width="auto" height="400">
+<img src="/img/png/ssmain.png" alt="Logo" width="auto" height="300">
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
