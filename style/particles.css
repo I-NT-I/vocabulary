@@ -217,3 +217,14 @@ padding: 50px;
         rgba(0, 0, 0, 0.7)
       )
 }
+.impressum{
+  z-index: 0;
+  background:
+  linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      )
+      ;
+      margin: 40px;
+      padding: 40px;
+}
